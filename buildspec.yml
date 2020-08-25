@@ -2,11 +2,10 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 8
+  build:
     commands:
-      # Install dependencies needed for running tests
       - npm install
-    
-      
-
-      # Upgrade AWS CLI to the latest version
-      - pip install --upgrade awscli
+      - node app.js
+      - npm start

@@ -58,3 +58,4 @@ app.use("*", (req,res)=> {
 app.listen(serverPortConfiguration.port,serverPortConfiguration.host,()=> { 
     console.log(`%s Yoloj running on ${serverPortConfiguration.port}`, chalk.green('✓')) 
 });
+
